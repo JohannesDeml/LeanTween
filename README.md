@@ -1,10 +1,24 @@
-LeanTween
-=========
+# LeanTween Unity Package
 
-LeanTween is an efficient tweening engine for the Unity 3d engine
+> LeanTween is an efficient tweening engine for the Unity 3d engine
 
-**To use LeanTween** move the included Plugins folder into the root of your project (or move LeanTween.cs directly into any pre-existing Assets/Plugins folder).
+[Documentation](http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html)
 
-Documentation can be found here: http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html
+## Installation
 
-Examples here: https://github.com/dentedpixel/LeanTween/archive/master.zip
+### Simple Download
+[Latest Unity Packages](../../releases/latest)
+
+### Unity Package Manager (UPM)
+
+> You will need to have git installed and set in your system PATH.
+
+Find `Packages/manifest.json` in your project and add the following:
+```json
+{
+  "dependencies": {
+    "com.oss.leantween": "https://github.com/JohannesDeml/LeanTween#2.50.0",
+    "...": "..."
+  }
+}
+```
