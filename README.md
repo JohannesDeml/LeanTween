@@ -17,7 +17,7 @@ Find `Packages/manifest.json` in your project and add the following:
 ```json
 {
   "dependencies": {
-    "com.oss.leantween": "https://github.com/JohannesDeml/LeanTween#2.50.0",
+    "com.oss.leantween": "https://github.com/JohannesDeml/LeanTween#2.50.1",
     "...": "..."
   }
 }
