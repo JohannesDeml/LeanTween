@@ -1,5 +1,6 @@
 # LeanTween Unity Package
 
+![Leantween UPM](https://repository-images.githubusercontent.com/108003426/f2531b80-04a1-11ea-8f7e-21ead711a42f)
 > LeanTween is an efficient tweening engine for the Unity 3d engine
 
 * [Documentation](http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html)
