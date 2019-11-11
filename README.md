@@ -2,7 +2,9 @@
 
 > LeanTween is an efficient tweening engine for the Unity 3d engine
 
-[Documentation](http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html)
+* [Documentation](http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html)
+* [Changelog](./CHANGELOG.md)
+* [License](./LICENSE.md)
 
 ## Installation
 
@@ -17,8 +19,9 @@ Find `Packages/manifest.json` in your project and add the following:
 ```json
 {
   "dependencies": {
-    "com.oss.leantween": "https://github.com/JohannesDeml/LeanTween#2.50.1",
+    "com.oss.leantween": "https://github.com/JohannesDeml/LeanTween.git#2.50.1",
     "...": "..."
   }
 }
 ```
+
