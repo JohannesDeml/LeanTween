@@ -1,6 +1,8 @@
 {
     "name": "com.leantween.editor",
-    "references": [],
+    "references": [
+        "GUID:da05cfec51b6c974cb48c8b604fd519d"
+    ],
     "includePlatforms": [
         "Editor"
     ],
@@ -10,5 +12,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
