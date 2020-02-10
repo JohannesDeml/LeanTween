@@ -144,6 +144,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using UnityEngine.Profiling;
 
 public enum TweenAction{
     MOVE_X,
@@ -319,39 +320,44 @@ public class LeanTween : MonoBehaviour {
     }
         
     public static void init(int maxSimultaneousTweens, int maxSimultaneousSequences){
-        if(tweens==null){
-            maxTweens = maxSimultaneousTweens;
-            tweens = new LTDescr[maxTweens];
-            tweensFinished = new int[maxTweens];
-            tweensFinishedIds = new int[maxTweens];
-            _tweenEmpty = new GameObject();
-            _tweenEmpty.name = "~LeanTween";
-            _tweenEmpty.AddComponent(typeof(LeanTween));
-            _tweenEmpty.isStatic = true;
-            #if !UNITY_EDITOR
-            _tweenEmpty.hideFlags = HideFlags.HideAndDontSave;
-            #endif
-            #if UNITY_EDITOR
-            if(Application.isPlaying)
-                DontDestroyOnLoad( _tweenEmpty );
-            #else
-            DontDestroyOnLoad( _tweenEmpty );
-            #endif
-            for(int i = 0; i < maxTweens; i++){
-                tweens[i] = new LTDescr();
-                tweens[i].reset();
-            }
-
-            #if UNITY_5_4_OR_NEWER
-            UnityEngine.SceneManagement.SceneManager.sceneLoaded += onLevelWasLoaded54;
-            #endif
-
-            sequences = new LTSeq[ maxSimultaneousSequences ]; 
-
-            for(int i = 0; i < maxSimultaneousSequences; i++){
-                sequences[i] = new LTSeq();
-            }
+        if (tweens != null)
+        {
+            return;
         }
+
+        Profiler.BeginSample("Init LeanTween");
+        maxTweens = maxSimultaneousTweens;
+        tweens = new LTDescr[maxTweens];
+        tweensFinished = new int[maxTweens];
+        tweensFinishedIds = new int[maxTweens];
+        _tweenEmpty = new GameObject();
+        _tweenEmpty.name = "~LeanTween";
+        _tweenEmpty.AddComponent<LeanTween>();
+        _tweenEmpty.isStatic = true;
+        #if !UNITY_EDITOR
+            _tweenEmpty.hideFlags = HideFlags.HideAndDontSave;
+        #endif
+        #if UNITY_EDITOR
+        if(Application.isPlaying)
+            DontDestroyOnLoad( _tweenEmpty );
+        #else
+            DontDestroyOnLoad( _tweenEmpty );
+        #endif
+        for(i = 0; i < maxTweens; i++){
+            tweens[i] = new LTDescr();
+            tweens[i].reset();
+        }
+
+        #if UNITY_5_4_OR_NEWER
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += onLevelWasLoaded54;
+        #endif
+
+        sequences = new LTSeq[ maxSimultaneousSequences ]; 
+
+        for(i = 0; i < maxSimultaneousSequences; i++){
+            sequences[i] = new LTSeq();
+        }
+        Profiler.EndSample();
     }
 
     public static void reset(){
