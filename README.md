@@ -7,6 +7,8 @@
 * [Changelog](./CHANGELOG.md)
 * [License](./LICENSE.md)
 
+[![openupm](https://img.shields.io/npm/v/com.oss.leantween?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.oss.leantween/)
+
 ## Installation
 
 ### Simple Download
@@ -26,3 +28,17 @@ Find `Packages/manifest.json` in your project and add the following:
 }
 ```
 
+### OpenUPM
+
+Install the package with [OpenUPM](https://openupm.com/) through the commandline
+
+```sh
+# Install openupm-cli
+$ npm install -g openupm-cli
+
+# Enter your unity project folder
+$ cd YOUR_UNITY_PROJECT_FOLDER
+
+# Add package to your project
+$ openupm add com.oss.leantween
+```
