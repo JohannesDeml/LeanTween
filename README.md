@@ -1,6 +1,6 @@
 # LeanTween Unity Package
 
-![Leantween UPM](https://repository-images.githubusercontent.com/108003426/f2531b80-04a1-11ea-8f7e-21ead711a42f)
+![Leantween UPM](https://repository-images.githubusercontent.com/108003426/0f689480-8597-11eb-9bac-bb36cdc063b3)
 > LeanTween is an efficient tweening engine for the Unity 3d engine  
 [![openupm](https://img.shields.io/npm/v/com.oss.leantween?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.oss.leantween/) [![](https://img.shields.io/github/release-date/JohannesDeml/LeanTween.svg)](https://github.com/JohannesDeml/LeanTween/releases)  [![Unity 5.6 or later](https://img.shields.io/badge/unity-5.6%20or%20later-blue.svg?logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)  [![Tested up to Unity 2020.2](https://img.shields.io/badge/tested%20up%20to%20unity-2020.2-green.svg?logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)
 
