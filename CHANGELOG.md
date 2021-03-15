@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.50.4](https://github.com/johannesdeml/LeanTween/tree/2.50.4) (2021-03-15)
+
+[Full Changelog](https://github.com/johannesdeml/LeanTween/compare/2.50.3...2.50.4)
+
 ## [2.50.3](https://github.com/johannesdeml/LeanTween/tree/2.50.3) (2020-01-30)
 
 [Full Changelog](https://github.com/johannesdeml/LeanTween/compare/2.50.2...2.50.3)
