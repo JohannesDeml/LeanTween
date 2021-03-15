@@ -19,6 +19,11 @@
 			"displayName": "Examples",
 			"description": "Tweening Examples",
 			"path": "Samples~/Examples"
+		},
+		{
+			"displayName": "Testing",
+			"description": "Tests",
+			"path": "Samples~/Testing"
 		}
 	]
 }
